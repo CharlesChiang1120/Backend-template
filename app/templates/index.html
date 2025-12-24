@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CORNING | API CONSOLE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@500;900&display=swap");
+
+      body {
+        background-color: #ffffff;
+        color: #000000;
+        font-family: "Outfit", sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      /* Corning 品牌大字：極具份量 */
+      .corning-brand {
+        letter-spacing: 0.7em;
+        font-size: 4.5rem;
+        font-weight: 900;
+        color: #004b87;
+        text-transform: uppercase;
+        line-height: 1;
+      }
+
+      .line {
+        height: 2px; /* 線條稍微加厚 */
+        width: 180px;
+        background-color: #004b87;
+        margin: 3rem auto;
+        opacity: 0.8; /* 線條也更明顯 */
+      }
+
+      /* API Console 按鈕 */
+      .btn-pill {
+        background-color: #004b87;
+        color: #ffffff;
+        transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+        letter-spacing: 0.4em;
+        border-radius: 9999px;
+        font-weight: 900;
+        font-size: 16px;
+      }
+
+      .btn-pill:hover {
+        background-color: #000000;
+        transform: scale(1.05);
+        letter-spacing: 0.5em;
+      }
+
+      /* 底部資訊：加深顏色與字重 */
+      .meta-footer {
+        position: fixed;
+        bottom: 4rem;
+        width: 100%;
+        text-align: center;
+        font-size: 11px;
+        font-weight: 500; /* 加粗至 Medium */
+        letter-spacing: 0.6em;
+        color: #475569; /* 明顯的深灰色 */
+        text-transform: uppercase;
+      }
+
+      /* 增加一個裝飾性小橫線在版本號上方，增加精準感 */
+      .meta-footer::before {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 1px;
+        background-color: #475569;
+        margin: 0 auto 1.5rem auto;
+        opacity: 0.5;
+      }
+    </style>
+  </head>
+  <body class="flex items-center justify-center min-h-screen">
+    <main class="text-center">
+      <header>
+        <h1 class="corning-brand ml-[0.7em]">TEST</h1>
+        <div class="line"></div>
+      </header>
+
+      <div class="mb-12">
+        <a href="/docs" class="btn-pill inline-block px-16 py-5 uppercase">
+          API Console
+        </a>
+      </div>
+    </main>
+
+    <footer class="meta-footer">
+      V1.0 &nbsp; | &nbsp; 2026 &nbsp; | &nbsp; UNIFIED NODE
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,1 @@
+MOCK_DEVICES = [{"id": 1, "name": "CNC-001", "status": "running", "factory_id": "TW_01"}]
