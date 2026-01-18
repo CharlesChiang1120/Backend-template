@@ -13,7 +13,7 @@ templates = Jinja2Templates(directory=os.path.join(BASE_DIR, "templates"))
 
 def create_app() -> FastAPI:
     setup_logging()
-    app = FastAPI(title="Factory OS API", version="1.0.0")
+    app = FastAPI(title="Plant API", version="1.0.0")
 
     @app.middleware("http")
     async def add_logging(request: Request, call_next):
